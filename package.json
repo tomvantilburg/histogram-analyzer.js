@@ -4,7 +4,8 @@
   "description": "make histogram and analyze it",
   "main": "dist/histogram-analyze.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && mkdir dist && rollup -f umd -n HistogramAnalyze -o dist/histogram-analyze.js -- index.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-mocha": "^2.1.1",
     "gulp-mocha-phantomjs": "^0.6.1",
-    "gulp-strip-debug": "^1.0.2"
+    "gulp-strip-debug": "^1.0.2",
+    "rollup": "^0.36"
   }
 }
